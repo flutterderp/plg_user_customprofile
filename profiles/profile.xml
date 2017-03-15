@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<form>
+	<fields name="customprofile">
+		<fieldset name="customprofile"
+			label="PLG_USER_CUSTOMPROFILE_SLIDER_LABEL">
+
+			<field name="something" type="text" id="something"
+				description="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_DESC"
+				label="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_LABEL"
+				message="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_MESSAGE"
+				filter="string" class="inputbox" size="30" />
+
+		</fieldset>
+	</fields>
+</form>

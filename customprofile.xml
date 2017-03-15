@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="user" method="upgrade">
+	<name>plg_user_customprofile</name>
+	<author>Joomla! Project</author>
+	<creationDate>March 2017</creationDate>
+	<copyright>(C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_USER_CUSTOMPROFILE_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="customprofile">customprofile.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>profiles</folder>
+	</files>
+ 
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_user_customprofile.ini</language>
+		<language tag="en-GB">en-GB.plg_user_customprofile.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="register-require-user" type="spacer"
+					label="PLG_USER_CUSTOMPROFILE_FIELD_NAME_REGISTER_REQUIRE_USER" />
+
+				<field name="register-require_something" type="list"
+					description="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_DESC"
+					label="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_LABEL">
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field name="profile-require-user" type="spacer"
+					label="PLG_USER_CUSTOMPROFILE_FIELD_NAME_PROFILE_REQUIRE_USER" />
+
+				<field name="profile-require_something" type="list"
+					description="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_DESC"
+					label="PLG_USER_CUSTOMPROFILE_FIELD_SOMETHING_LABEL">
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
